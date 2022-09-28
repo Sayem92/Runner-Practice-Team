@@ -19,4 +19,20 @@
 .home-right{
     border: 1px solid brown;
     margin: 10px;
+    
 }
+
+/* @media screen and (max-width: 400px){
+    .home-left-runners{
+       
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+
+    .home-left{
+      padding: 10px 40px;
+    }
+    .home{
+      display: block;
+    }
+} */

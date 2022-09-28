@@ -12,8 +12,8 @@ const Runners = (props) => {
             <img src={img} alt="" />
             <div className='info'>
                 <h3>Name: {name}</h3>
-                <p>Time required: {time}s </p>
                 <p>For age: {age}</p>
+                <p>Time required: {time}s </p>
                 <button className='btn'>Add To List</button>
             </div>
         </div>

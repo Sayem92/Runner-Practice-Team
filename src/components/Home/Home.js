@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import List from '../List/List';
 import Runners from '../Runners/Runners';
 import './Home.css'
 
@@ -31,7 +32,8 @@ const Home = () => {
                
             </div>
             <div className='home-right'>
-                <h1>List container</h1>
+                {/* <h1>List container</h1> */}
+                <List></List>
             </div>
         </div>
     );

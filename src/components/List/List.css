@@ -1,0 +1,44 @@
+.list{
+    position: sticky;
+    top: 0;
+    padding: 30px 15px 15px 15px;
+}
+
+.list img{
+    width: 60px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.name{
+   display: flex;
+   align-items: center;
+}
+.name h3, p{
+    margin: 0;
+}
+.information{
+    background-color:darkgray;
+    display:flex;
+    gap: 15px;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 10px
+}
+.information p{
+    font-size: 20px
+}
+
+.btn-break{
+    background-color:darkgray;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+.btn-break button{
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-left: 7px;
+    border: none;
+}
