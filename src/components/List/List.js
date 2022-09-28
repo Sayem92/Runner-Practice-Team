@@ -2,7 +2,14 @@ import React from 'react';
 import './List.css'
 import logo from './../../image/eid_pic-removebg-preview.png'
 
-const List = () => {
+const List = (props) => {
+    const{times} = props
+    // console.log(times)
+    let second = 0
+    for(const seconds of times){
+            second = second + seconds
+    }
+
     return (
         <div className='list'>
             <div className='name'>
@@ -38,7 +45,7 @@ const List = () => {
                 <h4>Exercise time </h4>
             </div>
             <div className='break-time'>
-                <h4>Break time </h4>
+                <h4>Break time: {second} second </h4>
             </div>
             <button className='btn-complete'>Activity Completed</button>
         </div>

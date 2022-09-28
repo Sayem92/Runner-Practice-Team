@@ -7,6 +7,7 @@ import './Home.css'
 
 const Home = () => {
     const [runners, setRunners] = useState([]);
+    const [times, setTimes] = useState([])
 
     useEffect(()=>{
         fetch('products.json')
@@ -15,7 +16,22 @@ const Home = () => {
 
     } , [])
 
-            console.log(runners)
+            
+     const addToList = (selectTime) =>{
+        // console.log(selectTime)  
+        let newTime= []
+        if(times){
+            newTime.push(...times,selectTime)
+            setTimes(newTime)
+        }
+        else{
+            setTimes(selectTime)
+        }
+        
+     }  
+    //  console.log(times)
+    
+    
     return (
         <div className='home'>
             <div className='home-left'>            
@@ -26,6 +42,7 @@ const Home = () => {
                         runners.map(runner => <Runners
                             key={runner.id} 
                             runner={runner}
+                            addToList={addToList}
                             ></Runners>)
                     }
                 </div>
@@ -33,7 +50,7 @@ const Home = () => {
             </div>
             <div className='home-right'>
               
-                <List></List>
+                <List times={times}></List>
             </div>
         </div>
     );

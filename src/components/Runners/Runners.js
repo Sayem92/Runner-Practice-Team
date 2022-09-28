@@ -3,8 +3,8 @@ import './Runners.css'
 
 const Runners = (props) => {
     const {runner} = props;
-    const {name, img, time, age} = runner
-    console.log(name,time)
+    const {name, img, time, age} = runner;
+    //  console.log(props)
     
     return (
         <div className='runners'>
@@ -14,7 +14,9 @@ const Runners = (props) => {
                 <h3>Name: {name}</h3>
                 <p>For age: {age}</p>
                 <p>Time required: {time}s </p>
-                <button className='btn'>Add To List</button>
+                <button
+                onClick={()=>props.addToList(time)}
+                className='btn'>Add To List</button>
             </div>
         </div>
     );
