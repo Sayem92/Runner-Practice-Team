@@ -42,7 +42,10 @@
     margin-left: 7px;
     border: none;
 }
-
+.btn-break button:hover{
+    background-color: blue;
+    color: white;
+}
 .exercise-time{
     background-color:darkgray;
     border-radius: 10px;
@@ -65,4 +68,7 @@
     font-size: larger;
     font-weight: 500;
     color: white;
+}
+.btn-complete:hover{
+    background-color: dodgerblue;
 }

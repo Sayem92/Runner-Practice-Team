@@ -1,15 +1,36 @@
 import React from 'react';
 import './List.css'
 import logo from './../../image/eid_pic-removebg-preview.png'
+import { useState } from 'react';
+import { addToLocalStorage, getToLocalStorage } from '../Storage/Storage';
+import { useEffect } from 'react';
+
 
 const List = (props) => {
-    const{times} = props
+   const [btnTime, setBtnTime] = useState([])
+    const{times} = props;
+
     // console.log(times)
     let second = 0
     for(const seconds of times){
             second = second + seconds
     }
 
+    const selectToBreakTime = (breakTime) =>{
+            // setBtnTime(breakTime)
+            addToLocalStorage(breakTime)
+           const preBreakTime =  getToLocalStorage()
+           setBtnTime(preBreakTime)
+    }
+
+
+    useEffect(()=>{
+
+        const preBreakTime =  getToLocalStorage()
+           setBtnTime(preBreakTime)
+
+    }, [btnTime]);
+   
     return (
         <div className='list'>
             <div className='name'>
@@ -35,17 +56,17 @@ const List = (props) => {
             </div>
             <h3>Add a break</h3>
             <div className='btn-break'>
-                <button>10s</button>
-                <button>20s</button>
-                <button>30s</button>
-                <button>40s</button>
+                <button onClick={(e)=> selectToBreakTime(e.target.innerText)}>10s</button>
+                <button onClick={(e)=> selectToBreakTime(e.target.innerText)}>20s</button>
+                <button onClick={(e)=> selectToBreakTime(e.target.innerText)}>30s</button>
+                <button onClick={(e)=> selectToBreakTime(e.target.innerText)}>40s</button>
             </div>
             <h3>Exercise Details</h3>
             <div className='exercise-time'>
-                <h4>Exercise time </h4>
+                <h4>Exercise time : {btnTime ? btnTime : '0s'}</h4>
             </div>
             <div className='break-time'>
-                <h4>Break time: {second} second </h4>
+                <h4>Break time : {second} second </h4>
             </div>
             <button className='btn-complete'>Activity Completed</button>
         </div>
