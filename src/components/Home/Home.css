@@ -1,0 +1,15 @@
+.home{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border: 1px solid red;
+}
+
+.home-left{
+    border: 1px solid blue;
+    margin-top: 100px;
+    /* margin: 10px; */
+}
+.home-right{
+    border: 1px solid brown;
+    margin: 10px;
+}
