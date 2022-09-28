@@ -1,0 +1,33 @@
+.runners{
+    width: 300px;
+    /* border: 1px solid yellowgreen; */
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+}
+.runners img{
+    width: 280px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.info{
+    padding: 10px;
+}
+.info h3{
+    margin: 0;
+}
+.info p{
+    margin: 5px 0;
+}
+.btn{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px 0;
+    background-color:deepskyblue;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: 500;
+    color: white;
+}

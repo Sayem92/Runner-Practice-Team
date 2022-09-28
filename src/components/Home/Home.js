@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Runners from '../Runners/Runners';
 import './Home.css'
 
 const Home = () => {
@@ -12,12 +13,22 @@ const Home = () => {
         .then(data => setRunners(data))
 
     } , [])
-    
+
             console.log(runners)
     return (
         <div className='home'>
             <div className='home-left'>            
-                <h1>Cart container</h1>
+                <h1>Runner Practise Team</h1>
+                <h3>Select today's exercise</h3>
+                <div className='home-left-runners'>
+                    {
+                        runners.map(runner => <Runners
+                            key={runner.id} 
+                            runner={runner}
+                            ></Runners>)
+                    }
+                </div>
+               
             </div>
             <div className='home-right'>
                 <h1>List container</h1>
