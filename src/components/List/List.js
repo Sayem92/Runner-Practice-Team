@@ -33,6 +33,14 @@ const List = () => {
                 <button>30s</button>
                 <button>40s</button>
             </div>
+            <h3>Exercise Details</h3>
+            <div className='exercise-time'>
+                <h4>Exercise time </h4>
+            </div>
+            <div className='break-time'>
+                <h4>Break time </h4>
+            </div>
+            <button className='btn-complete'>Activity Completed</button>
         </div>
     );
 };

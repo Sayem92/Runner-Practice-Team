@@ -32,7 +32,7 @@ const Home = () => {
                
             </div>
             <div className='home-right'>
-                {/* <h1>List container</h1> */}
+              
                 <List></List>
             </div>
         </div>

@@ -1,15 +1,19 @@
 .home{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color:aliceblue;
 }
 
 .home-left{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin-top: 100px;
     padding: 0 70px 30px 70px;
+   
 }
-
+.home-left h1{
+    color: blue;
+}
 .home-left-runners{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -17,8 +21,9 @@
 }
 
 .home-right{
-    border: 1px solid brown;
-    margin: 10px;
+    /* border: 1px solid brown; */
+    /* margin: 10px; */
+    background-color: bisque;
     
 }
 
