@@ -1,0 +1,14 @@
+.questions{
+    background-color:aliceblue;
+    padding: 30px 70px;
+}
+
+.questions h2{
+    margin-top: 0;
+}
+.question{
+    background-color:ivory;
+    border: 1px solid darkgoldenrod;
+    padding: 10px 20px 20px 20px;
+    border-radius: 15px;
+}
