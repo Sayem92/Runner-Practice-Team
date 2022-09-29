@@ -1,5 +1,4 @@
 .questions{
-    background-color:aliceblue;
     padding: 30px 70px;
 }
 
@@ -12,4 +11,17 @@
     padding: 10px 20px 20px 20px;
     border-radius: 15px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px){
+    .questions{
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .questions{
+        width: 100%;
+        padding: 30px 30px 30px 70px;
+    }
 }

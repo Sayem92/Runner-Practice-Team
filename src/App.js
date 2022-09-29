@@ -6,7 +6,7 @@ import QuestionAll from './components/Question/QuestionAll';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
      <Home></Home>
     <QuestionAll></QuestionAll>
     </div>
