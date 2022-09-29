@@ -41,7 +41,10 @@ const List = (props) => {
                 <img src={logo} alt="" />
                <div>
                     <h3>Md. Sayem Miah</h3>
-                    <p>Moulvibazar,Sylhet</p>
+                    <div style={{display:'flex',alignItems:'center'}}>
+                        <img style={{width:'24px',height:'24px',marginRight:'8px'}} src="location.png" alt="" />
+                        <p>Moulvibazar,Sylhet</p>
+                    </div>
                </div>
             </div>
             <div className='information'>

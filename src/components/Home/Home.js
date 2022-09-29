@@ -4,6 +4,8 @@ import { useState } from 'react';
 import List from '../List/List';
 import Runners from '../Runners/Runners';
 import './Home.css'
+// import logo from './../../../public'
+
 
 const Home = () => {
     const [runners, setRunners] = useState([]);
@@ -34,8 +36,11 @@ const Home = () => {
     
     return (
         <div className='home'>
-            <div className='home-left'>            
-                <h1>Runner Practise Team</h1>
+            <div className='home-left'> 
+            <div style={{display:'flex',alignItems:'center'}}>
+                    <img style={{width:'48px',height:'48px',marginRight:'8px'}} src="runner-icon.png" alt="" />           
+                    <h1>Runner Practise Team</h1>
+            </div>
                 <h3>Select today's exercise</h3>
                 <div className='home-left-runners'>
                     {
