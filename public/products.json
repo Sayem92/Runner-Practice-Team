@@ -2,22 +2,22 @@
     {
       "id": "ae69f0e4-559c-4b24-8032-80b63f9b5073",
       "name": "FOREST RUNNER",
-      "time": 70,
-      "age": "15-25",
+      "time": 170,
+      "age": "20-30",
       "img": "https://images.unsplash.com/photo-1530143311094-34d807799e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cnVubmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": "dbf7ab3f-b383-4d95-8ab7-f55fcf6fa5f2",
       "name": "FIELD RUNNER",
       "time": 30,
-      "age": "18-30",
+      "age": "18-35",
       "img": "https://images.unsplash.com/photo-1547941126-3d5322b218b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cnVubmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": "ed6a7ac3-7e67-4e3f-8461-bceb5178be42",
       "name": "ROAD RUNNER",
       "time": 40,
-      "age": "10-25",
+      "age": "10-50",
       "img": "https://images.unsplash.com/photo-1522040942177-269680274214?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHJ1bm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
@@ -31,7 +31,7 @@
       "id": "c667d3ff-41eb-4cf7-a433-819d959ea768",
       "name": "FOOTPATH RUNNER",
       "time": 50,
-      "age": "10-40",
+      "age": "10-50",
       "img": "https://images.unsplash.com/photo-1554139844-af2fc8ad3a3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJ1bm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
