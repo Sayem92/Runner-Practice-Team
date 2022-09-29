@@ -13,7 +13,7 @@ const Runners = (props) => {
             <div className='info'>
                 <h3>Name: {name}</h3>
                 <p>For age: {age}</p>
-                <p>Time required: {time}s </p>
+                <p>Time required: {time}min </p>
                 <button
                 onClick={()=>props.addToList(time)}
                 className='btn'>Add To List</button>

@@ -70,7 +70,7 @@ const List = (props) => {
             </div>
             <h3>Exercise Details</h3>
             <div className='exercise-time'>
-                <h4>Exercise time : {second} second </h4>
+                <h4>Exercise time : {second} minute </h4>
             </div>
             <div className='break-time'>
                 <h4>Break time : {btnTime ? btnTime : '0s'} </h4>
