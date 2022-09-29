@@ -13,6 +13,16 @@ const Question1 = () => {
            <h2>Q-2: What are the differences between props and state ?</h2>
             <p>Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components.</p>
            </div>
+
+           <div className='question'>
+           <h2>Q-3: Many way to use useEffect Hook without data loan ?</h2>
+            <p>1. Side Effect Runs After Every Render.</p>
+            <p>2. Side Effect Runs Only Once After Initial Render.</p>
+            <p>3. Side Effect Runs After State Value Changes.</p>
+            <p>4. Side Effect Runs After Props Value Change.</p>
+            <p>5. Side Effect Runs After Props and State Value Change.</p>
+            <p>6. Side EffectCleanup.</p>
+           </div>
            
         </div>
     );
