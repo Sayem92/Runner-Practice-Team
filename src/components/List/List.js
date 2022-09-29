@@ -4,6 +4,7 @@ import logo from './../../image/eid_pic-removebg-preview.png'
 import { useState } from 'react';
 import { addToLocalStorage, getToLocalStorage } from '../Storage/Storage';
 import { useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const List = (props) => {
@@ -30,6 +31,9 @@ const List = (props) => {
            setBtnTime(preBreakTime)
 
     }, [btnTime]);
+
+    const notify = () => toast("Congregation! done with your activity.");
+
    
     return (
         <div className='list'>
@@ -68,7 +72,8 @@ const List = (props) => {
             <div className='break-time'>
                 <h4>Break time : {second} second </h4>
             </div>
-            <button className='btn-complete'>Activity Completed</button>
+            <button className='btn-complete' onClick={notify}>Activity Completed</button>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
