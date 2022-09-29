@@ -70,10 +70,12 @@ const List = (props) => {
             </div>
             <h3>Exercise Details</h3>
             <div className='exercise-time'>
-                <h4>Exercise time : {second} minutes </h4>
+                <h4>Exercise time : </h4>
+                <p> {second} minutes</p>
             </div>
             <div className='break-time'>
-                <h4>Break time : {btnTime ? btnTime : '0s'} </h4>
+                <h4>Break time : </h4>
+                <p>{btnTime ? btnTime : '0s'}</p>
             </div>
             <button className='btn-complete' onClick={notify}>Activity Completed</button>
             <ToastContainer></ToastContainer>
